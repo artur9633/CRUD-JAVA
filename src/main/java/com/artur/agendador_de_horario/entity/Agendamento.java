@@ -1,0 +1,32 @@
+package com.artur.agendador_de_horario.entity;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDateTime;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = " agendamento ")
+
+public class Agendamento {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String produto;
+    private String profissional;
+    private  String telefoneCliente;
+    private LocalDateTime dataHoraAgendamento;
+
+    private String cliente;
+    private LocalDateTime dataInsercao = LocalDateTime.now()
+
+}
