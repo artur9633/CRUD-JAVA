@@ -23,7 +23,7 @@ public class Agendamento {
 
     private String produto;
     private String profissional;
-    private  String telefoneCliente;
+    private String telefoneCliente;
     private LocalDateTime dataHoraAgendamento;
 
     private String cliente;
