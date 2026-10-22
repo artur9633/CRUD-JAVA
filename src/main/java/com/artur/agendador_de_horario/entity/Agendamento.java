@@ -27,6 +27,6 @@ public class Agendamento {
     private LocalDateTime dataHoraAgendamento;
 
     private String cliente;
-    private LocalDateTime dataInsercao = LocalDateTime.now()
+    private LocalDateTime dataInsercao = LocalDateTime.now();
 
 }
